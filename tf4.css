@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  .contact-info {
+    margin-top: 20px;
+  }
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+  *{
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-padding: 1rem;
+      scroll-behavior: smooth;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+  }
+  
+  :root{
+      --main-color:indianred;
+      --text-color:black;
+      --bg-color:wheat;
+  }
+  
+  img{
+      width:100%;
+  }
+  
+
+  
+  header{
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+  
+  }
+  header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    display: none;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:gray;
+
+}
+.logo span{
+    color:indianred;
+}
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+}

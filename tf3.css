@@ -1,0 +1,247 @@
+
+*{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:indianred;
+    --text-color:black;
+    --bg-color:wheat;
+}
+
+img{
+    width:100%;
+}
+
+body{
+    color:gray;
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    display: none;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:gray;
+
+}
+.logo span{
+    color:indianred;
+}
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+}
+.navbar a{
+    color:gray;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-weight: 500;   
+    transition:.3s ease;    
+}
+
+ul li{
+    list-style: none;
+    margin-left:62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: indianred;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:brown;
+}
+.navbar a:hover{
+    color:indianred;
+    border-bottom: 3px solid indianred;
+    transition: .3s ease;
+}
+.navbar a:hover,.navbar .active{
+    color:indianred;
+    border-bottom: 3px solid indianred;
+    transition: .3s ease;
+}
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: brown;
+}
+.search-box{
+    top:110%;
+    right:0;
+    left:0;
+    background: gray;
+    box-shadow: 4px 4px 20px rgb(gray, black, white);
+    border:1px solid indianred;
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline:none;
+    background:transparent;
+    font-size: 1rem;
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+section{
+    padding:4rem 0 2rem;
+}
+.produits3_texte{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color:gray;
+
+}
+.section_produits3{
+    padding: 40px 5%;
+
+
+}
+.produits3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    float: left;
+    margin-right: 20px;
+}
+.produits3 .carte{
+    width: 310px;
+    background: rgb(224, 48, 3);
+    bottom:0 10px 20px black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    float:left;
+    margin-right: 20px;
+}
+.produits3 .carte img{
+    height: 250px;
+    width: 100%;
+}
+.produits3 .carte .desc{
+    padding: 5px 20px;
+    opacity:0.8;
+}
+
+.produits3 .carte .titre{
+    font-weight: 900;
+    font-size:20px;
+    color:black;
+    padding: 0 20px;
+
+}
+.produits3 .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.produits3 .carte .prix{
+    color:brown;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.produits3 .carte .achat{
+    font-size: 13px;
+    font-weight: 900;
+    color: indianred;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+.produits3 .carte .box .achat:hover{
+    cursor: pointer;
+    background: black;
+    color:white;
+}
+
+.navbar2{
+    padding: 20px 5%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index:999;
+    background-color: gray;
+   }
+   .navbar2 .logo2 h1{
+       color: white;
+       cursor: pointer;
+   
+   
+   }
+   .navbar2 .menu2 li{
+       list-style: none;
+       display: inline-block;
+   
+   }
+   .navbar2 .menu2 li{
+       display: block;
+       margin-left: 20px;
+       color: white;
+       border-bottom:40px solid transparent;
+       text-decoration: none;
+       font-size: 15px;
+       font-weight: bold;
+   
+   
+   
+   }
+   .navbar2 .menu2 li .active{
+       border-bottom: 4px solid black;
+   
+   }
+   
+   .navbar2 .menu2 li .a:hover{
+       border-bottom: 4px solid black;
+   
+   }
+   .carte{
+    float: left;
+   }
